@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-right">
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="animate-text-delay-1">Web Developer & Designer</p>
+            <div class="hero-btns animate-text-delay-2">
+                <a href="#projects" class="cta-primary">View My Work</a>
+                <a href="#contact" class="cta-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image-container">
+                <img src="images/profile.jpg" alt="Profile picture" class="about-image">
+            </div>
+            <div class="about-text-container">
+                <h3>Web Developer & Designer</h3>
+                <span class="subtitle">Based in New York</span>
+                <p>A passionate web developer with 3+ years of experience crafting clean, user-friendly websites and applications. I specialize in frontend development with a strong focus on creating responsive, accessible, and performant web experiences.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-project="1">
+                <h3>Project 1</h3>
+                <img src="images/project1.jpg" alt="Project 1">
+                <p>Description of project 1</p>
+                <button class="view-more">View Details</button>
+            </div>
+            
+            <!-- Project Card 2 -->
+            <div class="project-card" data-project="2">
+                <h3>Project 2</h3>
+                <img src="images/project2.jpg" alt="Project 2">
+                <p>Description of project 2</p>
+                <button class="view-more">View Details</button>
+            </div>
+            
+            <!-- Project Card 3 -->
+            <div class="project-card" data-project="3">
+                <h3>Project 3</h3>
+                <img src="images/project3.jpg" alt="Project 3">
+                <p>Description of project 3</p>
+                <button class="view-more">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Project preview">
+                <div class="project-details">
+                    <h4>Description</h4>
+                    <p></p>
+                    <h4>Technologies Used</h4>
+                    <ul class="tech-stack"></ul>
+                    <div class="project-links">
+                        <a href="#" class="live-demo" target="_blank">Live Demo</a>
+                        <a href="#" class="source-code" target="_blank">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

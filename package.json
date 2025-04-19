@@ -1,0 +1,11 @@
+{
+  "name": "static-website",
+  "version": "1.0.0",
+  "description": "A simple static website using HTML, CSS, and JavaScript.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
